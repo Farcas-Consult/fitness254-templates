@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your FCL Gym Verification Code</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f9fafc;
+        color: #0f172a;
+        margin: 0;
+        padding: 20px 10px;
+      }
+
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .header {
+        background-color: #fb2c36;
+        color: #ffffff;
+        padding: 24px;
+        text-align: center;
+      }
+
+      .logo-text {
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .header-subtitle {
+        font-size: 14px;
+        opacity: 0.9;
+        margin-top: 4px;
+      }
+
+      .content {
+        padding: 32px 24px;
+      }
+
+      .greeting {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+
+      .message {
+        font-size: 15px;
+        color: #475569;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 24px;
+      }
+
+      .otp-box {
+        text-align: center;
+        margin: 24px 0;
+        padding: 20px;
+        background-color: #f1f5f9;
+        border-radius: 8px;
+      }
+
+      .otp-code {
+        font-family: "Courier New", monospace;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        color: #fb2c36;
+      }
+
+      .security-notice {
+        background-color: #fef2f2;
+        border: 1px solid #fecaca;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 24px 0;
+        font-size: 13px;
+        color: #991b1b;
+      }
+
+      .support-text {
+        font-size: 13px;
+        color: #64748b;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .support-link {
+        color: #fb2c36;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .support-link:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        background-color: #f8fafc;
+        border-top: 1px solid #e2e8f0;
+        padding: 24px;
+        text-align: center;
+        font-size: 12px;
+        color: #94a3b8;
+      }
+
+      @media (max-width: 640px) {
+        .content {
+          padding: 24px 20px;
+        }
+
+        .otp-code {
+          font-size: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="header">
+        <div class="logo-text">FCL Gym</div>
+        <div class="header-subtitle">One-Time Verification Code</div>
+      </div>
+
+      <div class="content">
+        <h1 class="greeting">Confirm Your Login</h1>
+
+        <p class="message">
+          Use the code below to complete your login to FCL Gym. This one-time passcode is valid for the next 10 minutes.
+        </p>
+
+        <div class="otp-box">
+          <div class="otp-code">{{ .Token }}</div>
+        </div>
+
+        <div class="security-notice">
+          If you didn’t request this code, you can safely ignore this email. Your account remains secure.
+        </div>
+
+        <p class="support-text">
+          Need help? Contact us at <a href="mailto:support@fclgym.com" class="support-link">support@fclgym.com</a>
+        </p>
+      </div>
+
+      <div class="footer">
+        © 2025 FCL Gym. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Your Email</title>
+  </head>
+  <body style="margin:0; padding:0; font-family:Arial, sans-serif; background-color:#f9fafb; color:#1f2937;">
+    <div style="max-width:600px; margin:0 auto; background-color:#ffffff; border-radius:8px; overflow:hidden; box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+      
+      <!-- Header -->
+      <div style="background-color:#fb2c36; color:#ffffff; padding:40px 30px; text-align:center;">
+        <h1 style="margin:0 0 10px 0; font-size:24px;">Confirm Your Email</h1>
+        <p style="margin:0; font-size:16px;">Welcome to FCL Gym Management</p>
+      </div>
+
+      <!-- Body -->
+      <div style="padding:30px;">
+        <p style="font-size:16px; margin-bottom:20px;">
+          Thank you for signing up! Please confirm your email address to complete your registration and activate your account.
+        </p>
+
+        <div style="text-align:center; margin:30px 0;">
+          <a href="{{ .ConfirmationURL }}" style="display:inline-block; padding:14px 28px; background-color:#fb2c36; color:#ffffff; font-weight:bold; font-size:16px; border-radius:6px; text-decoration:none;">
+            ✅ Confirm Email
+          </a>
+        </div>
+
+        <p style="font-size:14px; color:#6b7280; text-align:center; margin-bottom:20px;">
+          If the button above doesn't work, copy and paste the following link into your browser:
+        </p>
+
+        <p style="font-size:13px; color:#4b5563; word-break:break-all; text-align:center;">
+          <a href="{{ .ConfirmationURL }}" style="color:#fb2c36; text-decoration:none;">{{ .ConfirmationURL }}</a>
+        </p>
+
+        <hr style="margin:30px 0; border:none; border-top:1px solid #e5e7eb;" />
+
+        <!-- Footer -->
+        <p style="font-size:12px; color:#9ca3af; text-align:center;">
+          If you did not sign up for FCL Gym Management, please ignore this message.
+        </p>
+      </div>
+
+      <!-- Final Footer -->
+      <div style="background-color:#f3f4f6; padding:20px 30px; text-align:center; font-size:12px; color:#9ca3af;">
+        © 2025 FCL Gym Management. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
